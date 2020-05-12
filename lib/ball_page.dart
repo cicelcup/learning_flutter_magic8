@@ -8,7 +8,18 @@ class BallPage extends StatelessWidget {
         title: Text("Ask me anything"),
       ),
       backgroundColor: Colors.blue,
-      body: Container(),
+      body: Container(
+        child: Center(
+          child: FlatButton(
+            child: Image.asset(
+              "images/ball1.png",
+            ),
+            onPressed: () {
+              print("I got clicked");
+            },
+          ),
+        ),
+      ),
     );
   }
 }
